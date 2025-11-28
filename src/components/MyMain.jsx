@@ -303,8 +303,9 @@ getMeteoParis=function () {
 }
     render() {
     return (
+        // milan-----------------------------------------------------------------------------------------------------
         <Container  ><Row><Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Milan.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Milan.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Milan.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Milan.name},{this.state.Milan.country}</Card.Title>
         
@@ -315,88 +316,89 @@ getMeteoParis=function () {
     </Card></Col>
     {/* paris --------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Paris.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Paris.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Paris.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Paris.name},{this.state.Paris.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Paris.description.includes('rain')? 'white':'black'}}>{this.state.Paris.name},{this.state.Paris.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Paris.description.includes('rain')? 'white':'black'}}>
           {this.state.Paris.description} - {this.state.Paris.temp}°C (min: {this.state.Paris.min}°C / max: {this.state.Paris.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* london----------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.London.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.London.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.London.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.London.name},{this.state.London.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.London.description.includes('rain')? 'white':'black'}}>{this.state.London.name},{this.state.London.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.London.description.includes('rain')? 'white':'black'}}>
           {this.state.London.description} - {this.state.London.temp}°C (min: {this.state.London.min}°C / max: {this.state.London.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* new york---------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.NewYork.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.NewYork.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.NewYork.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.NewYork.name},{this.state.NewYork.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.NewYork.description.includes('rain')? 'white':'black'}}>{this.state.NewYork.name},{this.state.NewYork.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.NewYork.description.includes('rain')? 'white':'black'}}>
           {this.state.NewYork.description} - {this.state.NewYork.temp}°C (min: {this.state.NewYork.min}°C / max: {this.state.NewYork.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* tokyo------------------------------------------------------------------------------------------------------ */}
      <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Tokyo.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Tokyo.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Tokyo.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Tokyo.name},{this.state.Tokyo.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Tokyo.description.includes('rain')? 'white':'black'}}>{this.state.Tokyo.name},{this.state.Tokyo.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Tokyo.description.includes('rain')? 'white':'black'}}>
           {this.state.Tokyo.description} - {this.state.Tokyo.temp}°C (min: {this.state.Tokyo.min}°C / max: {this.state.Tokyo.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* berlin------------------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Berlin.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Berlin.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' 
+          }} key={this.state.Berlin.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Berlin.name},{this.state.Berlin.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Berlin.description.includes('rain')? 'white':'black'}}>{this.state.Berlin.name},{this.state.Berlin.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Berlin.description.includes('rain')? 'white':'black'}}>
           {this.state.Berlin.description} - {this.state.Berlin.temp}°C (min: {this.state.Berlin.min}°C / max: {this.state.Berlin.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* madrid--------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Madrid.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Madrid.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Madrid.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Madrid.name},{this.state.Madrid.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Madrid.description.includes('rain')? 'white':'black'}}>{this.state.Madrid.name},{this.state.Madrid.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Madrid.description.includes('rain')? 'white':'black'}}>
           {this.state.Madrid.description} - {this.state.Madrid.temp}°C (min: {this.state.Madrid.min}°C / max: {this.state.Madrid.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* moscow--------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Moscow.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Moscow.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Moscow.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Moscow.name},{this.state.Moscow.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Moscow.description.includes('rain')? 'white':'black'}}>{this.state.Moscow.name},{this.state.Moscow.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Moscow.description.includes('rain')? 'white':'black'}}>
           {this.state.Moscow.description} - {this.state.Moscow.temp}°C (min: {this.state.Moscow.min}°C / max: {this.state.Moscow.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
     {/* sydney----------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage:'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Sydney.id}>
+         <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Sydney.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Sydney.id}>
       <Card.Body>
-        <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Sydney.name},{this.state.Sydney.country}</Card.Title>
+        <Card.Title style={{ fontWeight:'bold',color:this.state.Sydney.description.includes('rain')? 'white':'black'}}>{this.state.Sydney.name},{this.state.Sydney.country}</Card.Title>
         
-        <Card.Text style={{ fontWeight:'bold',color:'black'}}>
+        <Card.Text style={{ fontWeight:'bold',color:this.state.Sydney.description.includes('rain')? 'white':'black'}}>
           {this.state.Sydney.description} - {this.state.Sydney.temp}°C (min: {this.state.Sydney.min}°C / max: {this.state.Sydney.max}°C)
         </Card.Text>
       </Card.Body>
