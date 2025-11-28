@@ -310,7 +310,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Milan.name},{this.state.Milan.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:'black'}}>
-          {this.state.Milan.description} - {this.state.Milan.temp}°C (min: {this.state.Milan.min}°C / max: {this.state.Milan.max}°C)
+          {this.state.Milan.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Milan.temp}°C (min: {this.state.Milan.min}°C / max: {this.state.Milan.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -321,7 +324,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Paris.description.includes('rain')? 'white':'black'}}>{this.state.Paris.name},{this.state.Paris.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Paris.description.includes('rain')? 'white':'black'}}>
-          {this.state.Paris.description} - {this.state.Paris.temp}°C (min: {this.state.Paris.min}°C / max: {this.state.Paris.max}°C)
+          {this.state.Paris.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Paris.temp}°C (min: {this.state.Paris.min}°C / max: {this.state.Paris.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -332,7 +338,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.London.description.includes('rain')? 'white':'black'}}>{this.state.London.name},{this.state.London.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.London.description.includes('rain')? 'white':'black'}}>
-          {this.state.London.description} - {this.state.London.temp}°C (min: {this.state.London.min}°C / max: {this.state.London.max}°C)
+          {this.state.London.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.London.temp}°C (min: {this.state.London.min}°C / max: {this.state.London.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -343,7 +352,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.NewYork.description.includes('rain')? 'white':'black'}}>{this.state.NewYork.name},{this.state.NewYork.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.NewYork.description.includes('rain')? 'white':'black'}}>
-          {this.state.NewYork.description} - {this.state.NewYork.temp}°C (min: {this.state.NewYork.min}°C / max: {this.state.NewYork.max}°C)
+          {this.state.NewYork.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.NewYork.temp}°C (min: {this.state.NewYork.min}°C / max: {this.state.NewYork.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -354,7 +366,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Tokyo.description.includes('rain')? 'white':'black'}}>{this.state.Tokyo.name},{this.state.Tokyo.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Tokyo.description.includes('rain')? 'white':'black'}}>
-          {this.state.Tokyo.description} - {this.state.Tokyo.temp}°C (min: {this.state.Tokyo.min}°C / max: {this.state.Tokyo.max}°C)
+          {this.state.Tokyo.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Tokyo.temp}°C (min: {this.state.Tokyo.min}°C / max: {this.state.Tokyo.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -366,7 +381,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Berlin.description.includes('rain')? 'white':'black'}}>{this.state.Berlin.name},{this.state.Berlin.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Berlin.description.includes('rain')? 'white':'black'}}>
-          {this.state.Berlin.description} - {this.state.Berlin.temp}°C (min: {this.state.Berlin.min}°C / max: {this.state.Berlin.max}°C)
+          {this.state.Berlin.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Berlin.temp}°C (min: {this.state.Berlin.min}°C / max: {this.state.Berlin.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -377,7 +395,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Madrid.description.includes('rain')? 'white':'black'}}>{this.state.Madrid.name},{this.state.Madrid.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Madrid.description.includes('rain')? 'white':'black'}}>
-          {this.state.Madrid.description} - {this.state.Madrid.temp}°C (min: {this.state.Madrid.min}°C / max: {this.state.Madrid.max}°C)
+          {this.state.Madrid.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Madrid.temp}°C (min: {this.state.Madrid.min}°C / max: {this.state.Madrid.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -388,7 +409,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Moscow.description.includes('rain')? 'white':'black'}}>{this.state.Moscow.name},{this.state.Moscow.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Moscow.description.includes('rain')? 'white':'black'}}>
-          {this.state.Moscow.description} - {this.state.Moscow.temp}°C (min: {this.state.Moscow.min}°C / max: {this.state.Moscow.max}°C)
+          {this.state.Moscow.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Moscow.temp}°C (min: {this.state.Moscow.min}°C / max: {this.state.Moscow.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
@@ -399,7 +423,10 @@ getMeteoParis=function () {
         <Card.Title style={{ fontWeight:'bold',color:this.state.Sydney.description.includes('rain')? 'white':'black'}}>{this.state.Sydney.name},{this.state.Sydney.country}</Card.Title>
         
         <Card.Text style={{ fontWeight:'bold',color:this.state.Sydney.description.includes('rain')? 'white':'black'}}>
-          {this.state.Sydney.description} - {this.state.Sydney.temp}°C (min: {this.state.Sydney.min}°C / max: {this.state.Sydney.max}°C)
+          {this.state.Sydney.description} • <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+  <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+  <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+</svg> {this.state.Sydney.temp}°C (min: {this.state.Sydney.min}°C / max: {this.state.Sydney.max}°C)
         </Card.Text>
       </Card.Body>
     </Card></Col>
