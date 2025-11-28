@@ -306,7 +306,8 @@ getMeteoParis=function () {
     return (
         // milan-----------------------------------------------------------------------------------------------------
         <Container  ><Row><Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Milan.name}` } state={{ city: this.state.Milan }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Milan.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Milan.id}>
+        <Link to={`/city/${this.state.Milan.name}` } state={{ city: this.state.Milan }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger ' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Milan.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Milan.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Milan.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:'black'}}>{this.state.Milan.name},{this.state.Milan.country}</Card.Title>
         
@@ -320,7 +321,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* paris --------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Paris.name}` } state={{ city: this.state.Paris }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Paris.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Paris.id}>
+        <Link to={`/city/${this.state.Paris.name}` } state={{ city: this.state.Paris }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Paris.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Paris.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' }} key={this.state.Paris.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Paris.description.includes('rain')? 'white':'black'}}>{this.state.Paris.name},{this.state.Paris.country}</Card.Title>
         
@@ -334,7 +336,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* london----------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.London.name}` } state={{ city: this.state.London }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.London.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.London.id}>
+        <Link to={`/city/${this.state.London.name}` } state={{ city: this.state.London }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.London.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.London.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.London.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.London.description.includes('rain')? 'white':'black'}}>{this.state.London.name},{this.state.London.country}</Card.Title>
         
@@ -348,7 +351,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* new york---------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.NewYork.name}` } state={{ city: this.state.NewYork }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.NewYork.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.NewYork.id}>
+        <Link to={`/city/${this.state.NewYork.name}` } state={{ city: this.state.NewYork }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.NewYork.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.NewYork.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.NewYork.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.NewYork.description.includes('rain')? 'white':'black'}}>{this.state.NewYork.name},{this.state.NewYork.country}</Card.Title>
         
@@ -362,7 +366,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* tokyo------------------------------------------------------------------------------------------------------ */}
      <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Tokyo.name}` } state={{ city: this.state.Tokyo }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Tokyo.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Tokyo.id}>
+        <Link to={`/city/${this.state.Tokyo.name}` } state={{ city: this.state.Tokyo }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Tokyo.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Tokyo.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Tokyo.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Tokyo.description.includes('rain')? 'white':'black'}}>{this.state.Tokyo.name},{this.state.Tokyo.country}</Card.Title>
         
@@ -376,7 +381,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* berlin------------------------------------------------------------------------------------------------------- */}
     <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Berlin.name}` } state={{ city: this.state.Berlin }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Berlin.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' 
+        <Link to={`/city/${this.state.Berlin.name}` } state={{ city: this.state.Berlin }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Berlin.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Berlin.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)' 
           }} key={this.state.Berlin.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Berlin.description.includes('rain')? 'white':'black'}}>{this.state.Berlin.name},{this.state.Berlin.country}</Card.Title>
@@ -391,7 +397,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* madrid--------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Madrid.name}` } state={{ city: this.state.Madrid }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Madrid.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Madrid.id}>
+        <Link to={`/city/${this.state.Madrid.name}` } state={{ city: this.state.Madrid }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Madrid.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Madrid.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Madrid.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Madrid.description.includes('rain')? 'white':'black'}}>{this.state.Madrid.name},{this.state.Madrid.country}</Card.Title>
         
@@ -405,7 +412,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* moscow--------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Moscow.name}` } state={{ city: this.state.Moscow }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Moscow.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Moscow.id}>
+        <Link to={`/city/${this.state.Moscow.name}` } state={{ city: this.state.Moscow }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Moscow.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)' : this.state.Moscow.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  :'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Moscow.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Moscow.description.includes('rain')? 'white':'black'}}>{this.state.Moscow.name},{this.state.Moscow.country}</Card.Title>
         
@@ -419,7 +427,8 @@ getMeteoParis=function () {
      </Card></Link></Col>
     {/* sydney----------------------------------------------------------------------------------------------------------- */}
      <Col xs={12} md={6} lg={4}>
-        <Link to={`/city/${this.state.Sydney.name}` } state={{ city: this.state.Sydney }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5' style={{ height: '190px',backgroundImage: this.state.Sydney.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Sydney.id}>
+        <Link to={`/city/${this.state.Sydney.name}` } state={{ city: this.state.Sydney }} style={{ textDecoration: "none" }}> <Card className='rounded w-100 mt-5 border-danger' style={{ height: '190px',backgroundSize:'cover', backgroundImage: this.state.Sydney.description.includes('rain')? 'url(https://www.shutterstock.com/image-photo/raining-season-summer-storm-dark-260nw-2631620755.jpg)': this.state.Sydney.description.includes('cloud')
+      ?'url(https://img.freepik.com/foto-premium/cielo-nuvoloso-bianco-per-lo-sfondo_167650-4137.jpg)'  : 'url(https://img.freepik.com/vettori-gratuito/sfondo-di-cielo-blu-realistico_1048-6707.jpg?semt=ais_hybrid&w=740&q=80)'  }} key={this.state.Sydney.id}>
       <Card.Body>
         <Card.Title style={{ fontWeight:'bold',color:this.state.Sydney.description.includes('rain')? 'white':'black'}}>{this.state.Sydney.name},{this.state.Sydney.country}</Card.Title>
         
